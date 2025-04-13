@@ -22,7 +22,7 @@ p.110の表7.3の再現になっている。
 ここまでは自作でメッシュを生成した。
 続いて既存ライブラリpygmesh,meshioを用いてメッシュ
 を生成する場合を考える。(ch6.py)
-![pygmeshによるメッシュ](figs/mesh_from_library.png.png)
+![pygmeshによるメッシュ](figs/mesh_from_library.png)
 ある程度細かく取って上図のようなメッシュの上で
 ポアソン方程式を解くことを考える。
 問題設定は先と変わらない。
