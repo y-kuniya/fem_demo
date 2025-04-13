@@ -144,6 +144,7 @@ class Mesh:
     def get_boundary_nodes_2(self):
         boundary_nodes = []
         for node in self.nodes_dict.values():
-            if np.isclose(node.x, 0.0) or np.isclose(node.y, 0.0) or np.isclose(node.x, 1.0) or np.isclose(node.y, 1.0):
+            if (np.isclose(node.x, 0.0) or np.isclose(node.y, 0.0) 
+                or np.isclose(node.x, 1.0) or np.isclose(node.y, 1.0)):
                 boundary_nodes.append(node.id)
         return boundary_nodes
